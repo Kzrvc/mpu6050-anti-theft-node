@@ -35,14 +35,7 @@ Pločica je dizajnirana u EasyEDA i naručena od JLCPCB-a.
 
 ATmega328 je programiran preko ISP konektora (bez Arduino pločice), uz [MiniCore](https://github.com/MCUdude/MiniCore) podršku u Arduino IDE-u. Potrebna je biblioteka [MPU6050 (Electronic Cats)](https://github.com/ElectronicCats/mpu6050).
 
-## Poznate greške u izradi
 
-Opisano u izvještaju – što bi se ispravilo u sljedećoj reviziji pločice:
-
-- Napajanje 5 V nije ispravno izvedeno, što može utjecati na rad ATmega328.
-- MPU-6050 radi na 3,3 V, a ostatak sustava na 5 V – potrebno uskladiti naponske razine na I²C sabirnici.
-- Buzzer je potrebno upravljati preko tranzistora s baznim otpornikom jer mikrokontroler ne može isporučiti dovoljnu struju.
-- Naponskim regulatorima trebaju kondenzatori za stabilizaciju napona.
 
 ## Dokumentacija
 
